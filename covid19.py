@@ -3,14 +3,14 @@ import tkinter as tk
 from PIL import ImageTk, Image
 
 root = Tk()
-root.iconphoto(False, tk.PhotoImage(file="images/b.png"))
+root.iconphoto(False, tk.PhotoImage(file="./images/b.png"))
 
 root.geometry("1300x700")
 root.title("Covid-19 Tracker App")
 root['background'] = '#c4a474'
 canvas = Canvas(width=596, height=296)
 canvas.pack()
-img = ImageTk.PhotoImage(Image.open("images/logo.png"))
+img = ImageTk.PhotoImage(Image.open("./images/logo.png"))
 canvas.create_image(0, -55, anchor=NW, image=img)
 
 
